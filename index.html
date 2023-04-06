@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>WAR! | A Card Game</title>
+		<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/261/261787.png">
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Calistoga&family=Chewy&family=Lato:wght@100;300;400;700&family=Major+Mono+Display&family=Passion+One&family=Rajdhani&family=Roboto+Condensed:wght@300&family=Roboto+Serif:ital@0;1&family=Roboto:wght@300&family=Ubuntu+Mono&family=VT323&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Header background image by Amanda Jones - https://unsplash.com/@amandagraphc -->
+	</head>
+	<body>
+
+		<header>
+			<h1>War!</h1>
+		</header>
+
+		<main>
+			<section class="board">
+				<section class="player1">
+					<h2 class="p1h2">Player 1</h2>
+					<img src="assets/card-placeholder.png" alt="playing card" id="player1Card" class="cardImg p1CardImg">
+					<div id="p1WarBoard"></div>
+				</section>
+				<section class="player2">
+					<h2 class="p2h2">Player 2</h2>
+					<img src="assets/card-placeholder.png" alt="playing card" id="player2Card" class="cardImg p2CardImg">
+					<div id="p2WarBoard"></div>
+				</section>
+			</section>
+
+			<section class="dealer">
+				<button id="dealTwoCards">Deal</button>
+				<button id="startNewGame">Start new game</button>
+			</section>
+
+			<section class="results">
+				<h3>Result</h3>
+				<span id="resultDisplay"></span>
+			</section>
+			
+			<section class="score">
+				<h3>Running Score</h3>
+				<ul>
+					<li><span>Player 1: </span><span id="runningScoreP1"></span></li>
+					<li><span>Player 2: </span><span id="runningScoreP2"></span></li>
+				</ul>
+			</section>
+		</main>
+		
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
